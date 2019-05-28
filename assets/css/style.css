@@ -6,3 +6,4 @@ section{background-color: #FFFFFF}
 .bg-black{background-color: #000000 !important}
 .title_header{color : #043959}
 .value_title_header{color: #e7b302}
+.dropdown-item.active, .dropdown-item:active{background-color: #135b84;}
