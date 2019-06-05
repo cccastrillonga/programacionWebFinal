@@ -114,20 +114,14 @@ $basededatos = "alumnos";</pre>
 
 			</article>
 			<aside class="col-sm-6">
-				<p class="text-break text-justify font-weight-bold">Especificaciones de phpMyAdmin:</p>
+				<p class="text-break text-justify font-weight-bold">Conexión a la base de datos</p>
 				<p class="text-break text-justify">
-					<ul>
-						<li>Interface Web.</li>
-						<li>Manejador de base de datos MySQL, MariaDB, Drizzle.</li>
-						<li>Importación de datos desde CSV y SQL.</li>
-						<li>Fácil despliegue: paquetes totalmente autoinstalables que integran PHP</li>
-						<li>Exporta datos a varios formatos: CSV, SQL, XML, PDF (vía la biblioteca TCPDF), ISO/IEC 26300 OpenDocument Text y Spreadsheet, Word, Excel, LaTex y otros.</li>
-						<li>Administración de múltiples servidores.</li>
-						<li>Crea gráficos PDF del diseño de la base de datos.</li>
-						<li>Crea consultas complejas usando Query-by-Example (QBE).</li>
-						<li>Búsqueda global en una base de datos o un subconjunto de esta.</li>
-						<li>Transforma datos almacenados a cualquier formato usando un conjunto de funciones predefinidas, tal como BLOB.</li>
-					</ul>
+					Ahora que ya hemos conectado con el servidor de Base de Datos lo que tenemos que hacer es seleccionar la base de datos que vamos a utilizar. Os recuerdo que en mi caso en la base de datos alumnos que ya la hemos guardado en la variable $basededatos.
+					<br>Para seleccionar la base de datos a utilizar, usaremos la función mysqli_select_db() a la que le indicaremos 2 parámetros:el objeto de conexión a la base de datos que hemos creado hace un momento ($conexion) y el nombre de la base de datos ($basededatos) y Por lo tanto:
+					<pre>$db = mysqli_select_db( $conexion, $basededatos );</pre>
+					<br>Si lo ejecutamos y no nos da ningún error podemos estar de enhorabuena pero, como hemos hecho antes con la conexión al servidor de base de datos, vamos a añadir también aquí la opción para que nos devuelva un mensaje de error en el caso de que algo salga mal.</br>
+					<pre>$db = mysqli_select_db( $conexion, $basededatos ) or die ( "Upps! Pues va a ser que no se ha podido conectar a la base de datos" );</pre>
+					<br>De momento todo va bien pero si queréis, podéis cambiar el nombre de la base de datos por uno que no exista y así ver que nos muestre el mensaje de error</br>
 				</p>
 
 				<div class="text-center">
