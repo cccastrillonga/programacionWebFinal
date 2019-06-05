@@ -113,13 +113,13 @@ $basededatos = "alumnos";</pre>
 				Si ejecutáis el código que tenemos hasta ahora no deberíais ver nada y eso es bueno porque no estará dando ningún error.
 
 				Pero como no podemos estar seguro de que la conexión con el servidor de la base de datos sea correcta, vamos a añadir un poco de código para que muestre un mensaje en el caso de que la conexión con la base de datos no se haya podido realizar. De esta forma:
-				
+
 				<pre>$conexion = mysqli_connect( $servidor, $usuario, "" ) or die ("No se ha podido conectar al servidor de Base de datos");</pre>
 
 				Resumiendo lo que hemos hecho hasta ahora: Hemos creado las variables con los datos que necesitaremos y posteriormente hemos creado una variable y le hemos asignado la conexión con el servidor de base de datos.
 
 
-				<p class="text-break text-justify font-weight-bold">¿Qué nos ofrece phpMyAd?</p>
+				<p class="text-break text-justify font-weight-bold">¿Qué nos ofrece phpMy?</p>
 				<p class="text-break text-justify">
 					<ul>
 						<li>Esta aplicación nos permitirá realizar las operaciones básicas en base de datos MySQL, como son: crear y eliminar bases de datos, crear, eliminar y alterar tablas, borrar, editar y añadir campos, ejecutar sentencias SQL, administrar claves de campos, administrar privilegios y exportar datos en varios formatos. La función de exportar datos se emplea muchas veces para realizar backups de la base de datos y poder restaurar esta copia de seguridad en el futuro a través de phpMyAdmin mediante la opción “importar”.</li>
