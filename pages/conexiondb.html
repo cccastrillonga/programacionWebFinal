@@ -123,16 +123,23 @@ $basededatos = "alumnos";</pre>
 					<p class="text-break text-justify">Si lo ejecutamos y no nos da ningún error podemos estar de enhorabuena pero, como hemos hecho antes con la conexión al servidor de base de datos, vamos a añadir también aquí la opción para que nos devuelva un mensaje de error en el caso de que algo salga mal.</p>
 					<pre>$db = mysqli_select_db( $conexion, $basededatos ) or die ( "Upps! Pues va a ser que no se ha podido conectar a la base de datos" );</pre>
 					<p class="text-break text-justify">De momento todo va bien pero si queréis, podéis cambiar el nombre de la base de datos por uno que no exista y así ver que nos muestre el mensaje de error</p>
-				
 
-				<div class="text-center">
-					<figure class="figure">
-						<img src="../assets/img/phpmyadmin_logo.png" alt="Codigo PHP" class="img-fluid"> <br>
-						<figcaption class="figure-caption">Tomada de <a href="https://www.coriaweb.hosting/nos-ofrece-phpmyadmin/"
-								target="blank">https://www.coriaweb.hosting/nos-ofrece-phpmyadmin/</a>
-						</figcaption>
-					</figure>
-				</div>
+				<p class="text-break text-justify font-weight-bold">Hacer una consulta a la base de datos</p>
+				<p class="text-break text-justify">
+				Aunque ya hemos cumplido con el objetivo de este tutorial que no es otro que conectar con una base de datos MySQL con PHP, vamos a aprovechar para realizar una consulta a la misma y así ya nos vamos soltando con este asunto.
+				Para hacer una consulta a una base de datos haremos eso, una consulta y como ya sabréis algo de SQL no me voy a meter de momento en esos derroteros.
+				Entonces, para realizar una consulta utilizaremos la función mysqli_query() en la que indicaremos la consulta que queremos hacer.
+				Para hacerlo un poco más limpio y ordenado vamos a guardar la consulta en una variable y así la podremos reutilizar sin problemas.
+				Sin más, creamos una variable y le asignamos la consulta a realizar:</p>
+				<pre>$consulta = "SELECT * FROM alumnos";</pre>
+				<p class="text-break text-justify">La consulta anterior nos devolverá todos los registro de la tabla «alumnos». Si, la tabla se llama igual que la base de datos, que no os confunda esto…
+				Pero aún no hemos realizado la consulta, ahora debemos utilizar la función mysqli_query() de la siguiente forma:</p>
+				<pre>$resultado = mysqli_query( $conexion, $consulta );</pre>
+				Como hemos venido haciendo, vamos a añadir un poco más de código a lo anterior para que nos muestre un mensaje de error si algo a ido mal:
+				<pre>$resultado = mysqli_query( $conexion, $consulta ) or die ( "Algo ha ido mal en la consulta a la base de datos");</pre>
+				Si ejecutamos el código que tenemos hasta ahora todo funciona bien pero vamos a terminar mostrando los datos porque si no lo vemos no nos lo creemos, verdad?
+
+				
 			</aside>
 		</section>
 	
