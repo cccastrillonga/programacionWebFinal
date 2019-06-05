@@ -105,24 +105,24 @@ $basededatos = "alumnos";</pre>
 				<p class="text-break text-justify">
 				Ahora vamos a crear la conexión con el servidor de la base de datos mediante la función mysqli_connect() y los datos o variables que hemos creado hace un momento. Para ello crearemos una variable $conexion que contendrá la conexión.
 				<pre>$conexion = mysqli_connect( $servidor, $usuario, "" );</pre>
-				<br>Para explicar un poco la función mysqli_connect() podéis ver que debemos indicarle el servidor, el usuario de la base de datos y la contraseña de ese usuario.</br>
-				<br>En mi caso he introducido «» para la contraseña pero en vuestro caso, si tenéis definida una contraseña para ese usuario de la base de datos, deberíais introducir la contraseña en la variable $contrasena y luego indicar la variable como tercer parámetro en la llamada a la función mysqli_connect()</br>
-				<br>Si ejecutáis el código que tenemos hasta ahora no deberíais ver nada y eso es bueno porque no estará dando ningún error.</br>
-				<br>Pero como no podemos estar seguro de que la conexión con el servidor de la base de datos sea correcta, vamos a añadir un poco de código para que muestre un mensaje en el caso de que la conexión con la base de datos no se haya podido realizar. De esta forma.</br>
+				<p class="text-break text-justify">Para explicar un poco la función mysqli_connect() podéis ver que debemos indicarle el servidor, el usuario de la base de datos y la contraseña de ese usuario.</p>
+				<p class="text-break text-justify">En mi caso he introducido «» para la contraseña pero en vuestro caso, si tenéis definida una contraseña para ese usuario de la base de datos, deberíais introducir la contraseña en la variable $contrasena y luego indicar la variable como tercer parámetro en la llamada a la función mysqli_connect()</p>
+				<p class="text-break text-justify">Si ejecutáis el código que tenemos hasta ahora no deberíais ver nada y eso es bueno porque no estará dando ningún error.</p>
+				<p class="text-break text-justify">Pero como no podemos estar seguro de que la conexión con el servidor de la base de datos sea correcta, vamos a añadir un poco de código para que muestre un mensaje en el caso de que la conexión con la base de datos no se haya podido realizar. De esta forma.</p>
 				<pre>$conexion = mysqli_connect( $servidor, $usuario, "" ) or die ("No se ha podido conectar al servidor de Base de datos");</pre>
-				<br>Resumiendo lo que hemos hecho hasta ahora: Hemos creado las variables con los datos que necesitaremos y posteriormente hemos creado una variable y le hemos asignado la conexión con el servidor de base de datos.</br>
+				<p class="text-break text-justify">Resumiendo lo que hemos hecho hasta ahora: Hemos creado las variables con los datos que necesitaremos y posteriormente hemos creado una variable y le hemos asignado la conexión con el servidor de base de datos.</p>
 
 			</article>
 			<aside class="col-sm-6">
 				<p class="text-break text-justify font-weight-bold">Conexión a la base de datos</p>
 				<p class="text-break text-justify">
-					Ahora que ya hemos conectado con el servidor de Base de Datos lo que tenemos que hacer es seleccionar la base de datos que vamos a utilizar. Os recuerdo que en mi caso en la base de datos alumnos que ya la hemos guardado en la variable $basededatos.andres</p>
+					Ahora que ya hemos conectado con el servidor de Base de Datos lo que tenemos que hacer es seleccionar la base de datos que vamos a utilizar. Os recuerdo que en mi caso en la base de datos alumnos que ya la hemos guardado en la variable $basededatos.</p>
 					<p class="text-break text-justify">
 					Para seleccionar la base de datos a utilizar, usaremos la función mysqli_select_db() a la que le indicaremos 2 parámetros:el objeto de conexión a la base de datos que hemos creado hace un momento ($conexion) y el nombre de la base de datos ($basededatos) y Por lo tanto:</p>
 					<pre>$db = mysqli_select_db( $conexion, $basededatos );</pre>
-					<br>Si lo ejecutamos y no nos da ningún error podemos estar de enhorabuena pero, como hemos hecho antes con la conexión al servidor de base de datos, vamos a añadir también aquí la opción para que nos devuelva un mensaje de error en el caso de que algo salga mal.</br>
+					<p class="text-break text-justify">Si lo ejecutamos y no nos da ningún error podemos estar de enhorabuena pero, como hemos hecho antes con la conexión al servidor de base de datos, vamos a añadir también aquí la opción para que nos devuelva un mensaje de error en el caso de que algo salga mal.</p>
 					<pre>$db = mysqli_select_db( $conexion, $basededatos ) or die ( "Upps! Pues va a ser que no se ha podido conectar a la base de datos" );</pre>
-					<br>De momento todo va bien pero si queréis, podéis cambiar el nombre de la base de datos por uno que no exista y así ver que nos muestre el mensaje de error</br>
+					<p class="text-break text-justify">De momento todo va bien pero si queréis, podéis cambiar el nombre de la base de datos por uno que no exista y así ver que nos muestre el mensaje de error</p>
 				
 
 				<div class="text-center">
