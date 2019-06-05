@@ -1,7 +1,6 @@
 body{background: linear-gradient(90deg, #043959 10%, #145d87 90%);}
 header{background-color:#FFFFFF}
 section{background-color: #FFFFFF}
-section {overflow: auto}
 .navbar-nav{width: 80%;}
 .menu{padding: 0}
 .bg-black{background-color: #000000 !important}
