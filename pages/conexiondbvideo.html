@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="../assets/css/boostrap.min.css" crossorigin="anonymous">
+	<link rel="stylesheet" href="../assets/css/style.css" crossorigin="anonymous">
+	<link href="../assets/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+
+
+	<title>Instalacion APPSERVER |	Programacion WEB 1</title>
+</head>
+
+<body>
+	<div class="container">
+
+		<header class="row pt-2">
+			<div class="col-sm-12 d-flex justify-content-between align-items-center">
+				<div class="col-md-6">
+					<img src="../assets/img/logo_unad.png" alt="" class="img-fluid">
+				</div>
+				<div class="col-md-6 text-right font-weight-bolder">
+					<span class="title_header">OVI UNIDAD 2:</span>
+					<span class="value_title_header">Diseño de Sitios WEB</span> <br>
+					<span class="title_header">GRUPO:</span>
+					<span class="value_title_header">301122_26</span>
+					</span>
+				</div>
+			</div>
+
+			<div class="col-sm-12 mt-4 mb-4 menu">
+				<nav class="navbar navbar-expand-lg navbar navbar-dark bg-black">
+					<a class="navbar-brand" href="../index.html">Programacion WEB 1</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+						aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavDropdown">
+						<div class=" d-flex justify-content-center w-100">
+							<ul class="navbar-nav d-flex justify-content-around">
+								<li class="nav-item">
+									<a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+								</li>
+								<li class="nav-item dropdown">
+									<a class="nav-link dropdown-toggle" href="#" id="navLecturas" role="button" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										Lecturas
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navLecturas">
+										<a class="dropdown-item" href="lamp.html">Qué es LAMP?</a>
+										<a class="dropdown-item" href="phpmysql.html">PHP y Mysql</a>
+										<a class="dropdown-item" href="phpmyadmin.html">PhpMyAdmin</a>
+										<a class="dropdown-item" href="conexiondb.html">Conexion DB - PHP</a>
+										<a class="dropdown-item" href="mysqldatos.html">Mysql Datos</a>
+									</div>
+								</li>
+
+								<li class="nav-item dropdown active">
+									<a class="nav-link dropdown-toggle" href="#" id="navActividades" role="button" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										Multimedia
+									</a>
+									<div class="dropdown-menu" aria-labelledby="navActividades">
+										<a class="dropdown-item active" href="installappserver.html">Instalación APPServer</a>
+										<a class="dropdown-item active" href="#">Instalación PYH</a>
+									</div>
+								</li>
+
+								<li class="nav-item dropdown">
+										<a class="nav-link dropdown-toggle" href="#" id="navActividades" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Actividades
+										</a>
+										<div class="dropdown-menu" aria-labelledby="navActividades">
+											<a class="dropdown-item" href="practicasphp.html">Practicas PHP</a>
+										</div>
+									</li>
+
+								<li class="nav-item">
+									<a class="nav-link" href="autores.html">Autores</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</nav>
+			</div>
+		</header>
+
+
+
+
+		<section class="row p-2">
+			<article class="col-sm-12">
+					<h1>APPSERVER<small class="text-muted"> Qué es?</small></h1>
+
+					<p class="text-break text-justify">
+						Es un software que nos permite instalar sobre una maquina Windows <span class="font-weight-bolder">(Apache, Mysql y phpMyAdmin)</span> de forma conjunta
+						Este es muy util cuando deseamos comenzar a familiarizarnos con gestores de contenido, aprender a configurarlos e instalarlos
+						ya que nos permite realizar pruebas sobre neustro pc y una vez ya tengamos mejor conocimiento del tema podemos decidirnos a comprar un dominio y un alojamiento en la WEB.
+					</p>
+
+					<div class="text-center mt-2 mb-3 shadow-lg p-3 mb-5 bg-white rounded">
+							<figure class="figure">
+								<img src="../assets/img/appserv.jpg" alt="Codigo PHP" class="img-fluid">
+								<figcaption class="figure-caption">Tomada de <a
+										href="http://reciclajecreativoo.blogspot.com/"
+										target="blank">http://reciclajecreativoo.blogspot.com/</a>
+								</figcaption>
+							</figure>
+						</div>
+
+					<p class="text-break text-justify font-weight-bold">Ventajas frente a los demás:</p>
+					<p class="text-break text-justify">
+						<ul>
+							<li>Fácil y rápida instalación</li>
+							<li>Herramienta para restablecer la contraseña de mysql</li>
+							<li>Podemos decidir que instalar y que omitir, muy útil si ya tenemos alguna versión de mysql instalada u otra base de datos instalada.</li>
+						</ul>
+					</p>
+
+					<p class="text-break text-justify font-weight-bold">Desventaja frente a los demás:</p>
+					<p class="text-break text-justify">
+						<ul>
+							<li>No tiene interfaz de administración donde se concentren todas las opciones.</li>
+						</ul>
+					</p>
+			</article>
+			
+			<article class="col-sm-12">
+				<div class="card" >
+					<div class="card-body">
+						<h5 class="card-title">Instalación</h5>
+						<h6 class="card-subtitle mb-2 text-muted">Tomado de <a href="https://www.youtube.com/channel/UCG-vfPN6sJPtXxcUHZWqCjQ">https://www.youtube.com/channel/UCG-vfPN6sJPtXxcUHZWqCjQ</a> - Wilmar Garcia</h6>
+						<div class="embed-responsive embed-responsive-16by9">
+								<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/OalL-2YJ4tw" allowfullscreen></iframe>
+							  </div>
+					</div>
+				</div>
+			</article>
+		</section>
+
+		<footer class="row bg-black pt-2">
+			<div class="col-sm-6 text-white p-4">
+				<div class="">
+					<img src="../assets/img/logo_footer.png" alt="" class="img-fluid" width="250">
+				</div>
+				<div class="infoUNAD mt-4">
+					<span> Linea nacional gratuita desde colombia : <a href="tel:018000115223">018000115223</a></span> <br>
+					<span>Atencion al Usuario: <a
+							href="mailto:atencionalusuario@unad.edu.co">atencionalusuario@unad.edu.co</a></span><br>
+					<span>Anticorrupcion: <a href="mailto:anticorrupcion@unad.edu.co">anticorrupcion@unad.edu.co</a></span>
+				</div>
+			</div>
+			<div class="col-sm-6  text-white p-4">
+				<p class="font-weight-bolder">Enlaces de Interes</p>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<ul class="list-unstyled">
+							<li><a href="https://estudios.unad.edu.co/" target="blank">Aspirantes</a></li>
+							<li><a href="https://academia.unad.edu.co/estudiantes-servicios" target="blank">Estudiantes</a></li>
+							<li><a href="https://visae.unad.edu.co/egresados" target="blank">Egresados</a></li>
+							<li><a href="https://informacion.unad.edu.co/cuerpo-academico" target="blank">Cuerpo académico</a></li>
+							<li><a href="https://informacion.unad.edu.co/servidores-publicos" target="blank">Servidores públicos</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul class="list-unstyled">
+							<li><a href="https://directorio.unad.edu.co/sedes-a-nivel-nacional-e-internacional" target="blank">Zonas y
+									Centros</a></li>
+							<li><a href="https://investigacion.unad.edu.co/" target="blank">Investigación</a></li>
+							<li><a href="https://academia.unad.edu.co/" target="blank">Escuelas</a></li>
+							<li><a href="https://visae.unad.edu.co/bienestar" target="blank">Bienestar UNADISTA</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
