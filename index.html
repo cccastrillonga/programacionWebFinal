@@ -11,7 +11,18 @@
 	<link href="assets/img/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
 		<title>Programacion WEB 1 | UNAD</title>
 		
-		<script src="assets/js/contador.js"></script>
+		<script>
+		
+		var contador = 0;
+			fetch('http://200.116.198.74:8080/visitas/Get/index.php')
+			.then(function(visitas,data){
+				return visitas.json();
+			})
+			.then(function(visitas){
+				document.getElementById("Visitas").innerHTML = visitas;
+			})
+
+		</script>
   </head>
   <body>
 		<div class="container">
